@@ -1,7 +1,5 @@
 import turtle
-from my_draw_shape import minh_draw_heart
-from all_draw_shape  import all_minh_draw_heart
-from all_my_draw_shape import second_minh_draw_heart
+from my_draw_shape import minh_draw_heart, all_minh_draw_heart, second_minh_draw_heart
 
 turtle.colormode(255)
 
@@ -21,14 +19,14 @@ def main(
     print("New X:", new_x)
     print("New Y:", new_y)
 
-    new_color, new_x, new_y = second_minh_draw_heart(color, x, y)
+    new_color, new_x, new_y = second_minh_draw_heart(new_color, new_x+30, new_y)
 
     # Output the returned values
     print("New Color:", new_color)
     print("New X:", new_x)
     print("New Y:", new_y)
 
-    new_color, new_x, new_y = all_minh_draw_heart(color, x-100, y)
+    new_color, new_x, new_y = all_minh_draw_heart(new_color, new_x-200, new_y-100)
 
     # Output the returned values
     print("New Color:", new_color)
